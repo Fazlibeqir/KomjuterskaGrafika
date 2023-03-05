@@ -29,6 +29,6 @@ void drawLine(int x0, int y0, int x1, int y1) {
 }
 
 int main() {
-    drawLine(5, 5, 15, 10); // Draw a line from (2, 2) to (7, 4)
+    drawLine(5, 5, 15, 10); // Draw a line from (x0, y0) to (x1, y1)
     return 0;
 }
