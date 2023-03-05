@@ -1,0 +1,3 @@
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/The Bresenham Line-Drawing Algorithm/cmake-build-debug/CMakeFiles/algoritm.dir
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/The Bresenham Line-Drawing Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/The Bresenham Line-Drawing Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

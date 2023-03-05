@@ -1,0 +1,4 @@
+ToolSet: w64 3.3 (local)@F:\winbuilds
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=F:/CLION/CLion 2021.1.2/bin/ninja/win/x64/ninja.exe
