@@ -1,0 +1,3 @@
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Midpoint Circle Algorithm/cmake-build-debug/CMakeFiles/Midpoint_Circle_Algorithm.dir
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Midpoint Circle Algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Midpoint Circle Algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

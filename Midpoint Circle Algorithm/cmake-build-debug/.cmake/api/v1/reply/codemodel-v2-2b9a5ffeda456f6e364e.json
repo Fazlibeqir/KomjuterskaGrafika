@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.24"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Midpoint_Circle_Algorithm",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Midpoint_Circle_Algorithm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Midpoint_Circle_Algorithm-Debug-b2dde127a4ecb26fe5ee.json",
+					"name" : "Midpoint_Circle_Algorithm",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Midpoint Circle Algorithm/cmake-build-debug",
+		"source" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Midpoint Circle Algorithm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
