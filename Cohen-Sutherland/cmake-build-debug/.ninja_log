@@ -1,0 +1,9 @@
+# ninja log v5
+1	668	7035293885487964	CMakeFiles/Cohen_Sutherland.dir/main.cpp.obj	b8b4c9b66ff6ce6e
+681	1021	7035293888966219	Cohen_Sutherland.exe	df579056cfd5a737
+2	388	7035297237972131	CMakeFiles/Cohen_Sutherland.dir/main.cpp.obj	b8b4c9b66ff6ce6e
+389	496	7035297239012144	Cohen_Sutherland.exe	df579056cfd5a737
+2	344	7035297839315748	CMakeFiles/Cohen_Sutherland.dir/main.cpp.obj	b8b4c9b66ff6ce6e
+344	450	7035297840348642	Cohen_Sutherland.exe	df579056cfd5a737
+2	412	7035298419020098	CMakeFiles/Cohen_Sutherland.dir/main.cpp.obj	b8b4c9b66ff6ce6e
+413	529	7035298420157118	Cohen_Sutherland.exe	df579056cfd5a737
