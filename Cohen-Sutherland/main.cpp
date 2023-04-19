@@ -6,6 +6,7 @@ using namespace std;
 struct wcPt2D {
     float x, y;
 };
+
 int round(float a) {
     return int(a + 0.5);
 }
