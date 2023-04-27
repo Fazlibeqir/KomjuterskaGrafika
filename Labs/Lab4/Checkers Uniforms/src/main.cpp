@@ -10,29 +10,36 @@ void processInput(GLFWwindow *window);
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 800;
 
- const char *vertexShaderSource = R"glsl(
+const char* vertexShaderSource = R"glsl(
     #version 330 core
     layout (location = 0) in vec3 aPos;
+    layout (location = 1) in vec2 vUV;
+    out vec2 UV;
     void main()
     {
-       gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+        gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+        UV = vUV;
     }
 )glsl";
- const char *fragmentShaderSource = R"glsl(
+
+const char* fragmentShaderSource = R"glsl(
     #version 330 core
+    in vec2 UV;
     out vec4 FragColor;
     uniform int numRow;
     uniform int numCol;
-    void main(){
-        int row = int(gl_FragCoord.y);
-        int column = int(gl_FragCoord.x);
-        if((row+column)%2==0){
-             FragColor = vec4(0.0f, 0.0f, 0.0f, 1.0f);
-        }else{
+    void main()
+    {
+        int row = int(UV.y * numRow);
+        int column = int(UV.x * numCol);
+        if (mod(column + row, 2) == 0) {
+            FragColor = vec4(0.0f, 0.0f, 0.0f, 1.0f);
+        } else {
             FragColor = vec4(1.0f, 1.0f, 1.0f, 1.0f);
         }
     }
 )glsl";
+
 
 int main()
 {
@@ -72,7 +79,7 @@ int main()
     // ------------------------------------
     // vertex shader
     GLuint vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+    glShaderSource(vertexShader, 1, &vertexShaderSource, nullptr);
     glCompileShader(vertexShader);
     // check for shader compile errors
     int success;
@@ -85,7 +92,7 @@ int main()
     }
     // fragment shader
     GLuint fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+    glShaderSource(fragmentShader, 1, &fragmentShaderSource, nullptr);
     glCompileShader(fragmentShader);
     // check for shader compile errors
     glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
@@ -98,6 +105,8 @@ int main()
     GLuint shaderProgram = glCreateProgram();
     glAttachShader(shaderProgram, vertexShader);
     glAttachShader(shaderProgram, fragmentShader);
+    glBindAttribLocation(shaderProgram,0,"aPos");
+    glBindAttribLocation(shaderProgram,1,"vUV");
     glLinkProgram(shaderProgram);
     // check for linking errors
     glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
@@ -105,41 +114,45 @@ int main()
         glGetProgramInfoLog(shaderProgram, 512, nullptr, infoLog);
         std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
     }
+    glDetachShader(shaderProgram,vertexShader);
+    glDetachShader(shaderProgram,fragmentShader);
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
-
-    GLuint  VBO, VAO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
-    glBindVertexArray(VAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    GLfloat vertices[] = {
+    int numRow=8;
+    int numCol=8;
+    float vertices[] = {
             -1.0f, -1.0f, 0.0f,
-            -1.0f, 1.0f, 0.0f,
-            1.0f,  1.0f, 0.0f,
-            1.0f,-1.0f,0.0f
+            1.0f, -1.0f, 0.0f,
+            -1.0f,  1.0f, 0.0f,
+            1.0f,  1.0f, 0.0f
     };
+
+// teksturaShader
+    float uv[] = {
+            0.0f, 0.0f,
+            1.0f, 0.0f,
+            0.0f, 1.0f,
+            1.0f, 1.0f
+    };
+    GLuint VAO,VBO,EBO;;
+    glGenBuffers(1, &VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    //glBufferData(GL_ARRAY_BUFFER, sizeof(vertices_a), vertices_a, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+    glGenBuffers(1, &EBO);
+    glBindBuffer(GL_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(uv), uv, GL_STATIC_DRAW);
+    glGenVertexArrays(1, &VAO);
+    glBindVertexArray(VAO);
+    // bind the Vertex Array Object first, then bind and set vertex buffer(s), and then configure vertex attributes(s).
     glEnableVertexAttribArray(0);
-
-    // note that this is allowed, the call to glVertexAttribPointer registered VBO as the vertex attribute's bound vertex buffer object so afterwards we can safely unbind
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-
-    // You can unbind the VAO afterwards so other VAO calls won't accidentally modify this VAO, but this rarely happens. Modifying other
-    // VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
-    glBindVertexArray(0);
-
-
-    // uncomment this call to draw in wireframe polygons.
-    //glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, (void*)0);
+    glEnableVertexAttribArray(1);
+    glBindBuffer(GL_ARRAY_BUFFER, EBO);
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, (void*)0);
 
     // render loop
     // -----------
@@ -151,21 +164,17 @@ int main()
 
         // render
         // ------
-
+        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
 
         // draw our first triangle
         glUseProgram(shaderProgram);
-        glBindVertexArray(VAO); // seeing as we only have a single VAO there's no need to bind it every time, but we'll do so to keep things a bit more organized
-
-        GLint numRowsLocation=glGetUniformLocation(shaderProgram,"numRow");
-        GLint numColumnsLocation=glGetUniformLocation(shaderProgram,"numCol");
-        glUniform1i(numRowsLocation,8);
-        glUniform1i(numColumnsLocation,8);
-
-
-        glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
-         glBindVertexArray(0); // no need to unbind it every time
-          glUseProgram(0);
+        glBindVertexArray(VAO);
+        glUniform1i(glGetUniformLocation(shaderProgram,"numRow"), numRow);
+        glUniform1i(glGetUniformLocation(shaderProgram,"numCol"), numCol);
+        glDrawArrays(GL_TRIANGLE_STRIP, 0, 4);
+//         glBindVertexArray(0); // no need to unbind it every time
+//          glUseProgram(0);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -177,6 +186,9 @@ int main()
     // ------------------------------------------------------------------------
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
+    glDeleteProgram(shaderProgram);
+
 
     // glfw: terminate, clearing all previously allocated GLFW resources.
     // ------------------------------------------------------------------

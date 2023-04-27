@@ -1,0 +1,27 @@
+# ninja log v5
+21	1247	7043252134308516	vendor/glfw/src/CMakeFiles/glfw.dir/context.c.obj	fa0875ee1fb6bfa2
+28	1262	7043252134328526	vendor/glfw/src/CMakeFiles/glfw.dir/init.c.obj	6812e9af10a58a38
+35	1352	7043252135288537	vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	b0111279bfebf19f
+1263	2553	7043252147350570	vendor/glfw/src/CMakeFiles/glfw.dir/input.c.obj	4278772ed35c25e6
+1254	2402	7043252145860571	vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	49735b13808a99b8
+4626	4824	7043252170096611	vendor/glfw/src/libglfw3.a	2d088e360d9be5a8
+1	2261	7043252144310563	CMakeFiles/OpenGLPrj.dir/src/Shader.cpp.obj	e38ac67483d8afcb
+14	2380	7043252145600657	CMakeFiles/OpenGLPrj.dir/vendor/glad/src/glad.c.obj	9e7a9d2acc352319
+1352	2500	7043252146850572	vendor/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	1aafd65f37be737d
+2262	3483	7043252156678166	vendor/glfw/src/CMakeFiles/glfw.dir/window.c.obj	f9e2a73f7a35208f
+2402	3522	7043252157068164	vendor/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	edb6ea3c51b2fbcd
+2380	3554	7043252157368169	vendor/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	4f2ffc25c9ca186c
+4	1175	7043311325224181	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	6437ee67a2988283
+2500	3561	7043252157408166	vendor/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	555f6083044043b1
+2553	3604	7043252157888193	vendor/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	b5050d243be20eb2
+3562	4498	7043252166831908	vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	93fd26f960401905
+3522	4511	7043252166971896	vendor/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	e7def3a0578b19dc
+3554	4537	7043252167231873	vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	54f557e1b74cd26
+3484	4626	7043252168101890	vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	165801f83fb72467
+1180	1490	7043311327916538	OpenGLPrj/bin/OpenGLPrj.exe	72fc5ac10b5b40a4
+5	1308	7043313237221136	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	6437ee67a2988283
+1312	1622	7043313239920679	OpenGLPrj/bin/OpenGLPrj.exe	72fc5ac10b5b40a4
+5	1380	7043313558858336	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	6437ee67a2988283
+1385	1709	7043313561717202	OpenGLPrj/bin/OpenGLPrj.exe	72fc5ac10b5b40a4
+4	1172	7043313682763085	CMakeFiles/OpenGLPrj.dir/src/main.cpp.obj	6437ee67a2988283
+1174	1487	7043313685434574	OpenGLPrj/bin/OpenGLPrj.exe	72fc5ac10b5b40a4
