@@ -3,6 +3,17 @@
 #include <iostream>
 #include "glad/glad.h"
 
+const int numDisks = 5;
+const float poleXOffset = 0.6f;
+const float diskXOffset = 0.2f;
+const float diskHeight = 0.1f;
+const float poleHeight = 1.0f;
+const float poleRadius = 0.05f;
+const float* blue = glm::value_ptr(glm::vec3(0.0f, 0.0f, 1.0f));
+const float* green = glm::value_ptr(glm::vec3(0.0f, 1.0f, 0.0f));
+const float* red = glm::value_ptr(glm::vec3(1.0f, 0.0f, 0.0f));
+const float* white = glm::value_ptr(glm::vec3(1.0f, 1.0f, 1.0f));
+
 struct Disk{
     int size;
     float x,y;

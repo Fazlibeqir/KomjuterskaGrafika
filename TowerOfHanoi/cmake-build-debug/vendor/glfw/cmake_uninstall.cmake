@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/vendor/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/vendor/glfw/install_manifest.txt\"")
+if (NOT EXISTS "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/vendor/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/vendor/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/vendor/glfw/install_manifest.txt" files)
+file(READ "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/vendor/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

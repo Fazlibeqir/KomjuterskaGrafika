@@ -1,4 +1,4 @@
-# Install script for directory: F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/vendor/glfw/src
+# Install script for directory: F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/vendor/glfw/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/vendor/glfw/src/libglfw3.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/vendor/glfw/src/libglfw3.a")
 endif()
 
