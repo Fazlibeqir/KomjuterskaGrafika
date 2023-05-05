@@ -1,4 +1,4 @@
-# Install script for directory: F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj
+# Install script for directory: F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/vendor/glfw/cmake_install.cmake")
+  include("F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/vendor/glfw/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Traning/TowerOfHanoi/OpenGLPrj/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/TowerOfHanoi/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
