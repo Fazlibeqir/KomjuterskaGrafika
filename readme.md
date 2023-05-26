@@ -1,2 +1,2 @@
-http://www.opengl-tutorial.org/beginners-tutorials/
-https://learnopengl.com/
+#http://www.opengl-tutorial.org/beginners-tutorials/
+#https://learnopengl.com/
