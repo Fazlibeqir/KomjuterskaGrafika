@@ -21,7 +21,7 @@ const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 800;
 
 // camera
-static Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+static Camera camera(glm::vec3(0.0f, 0.0f, 5.0f));
 static float lastX = SCR_WIDTH / 2.0f;
 static float lastY = SCR_HEIGHT / 2.0f;
 static bool firstMouse = true;
@@ -135,7 +135,9 @@ int main() {
   glEnableVertexAttribArray(0);
 
   int uniform= glGetUniformLocation(ourShader.ID, "ChangeColor");
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    float mouthAngle = 0.0f;
+    float animationSpeed = 2.0f;
+
   // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
@@ -173,11 +175,18 @@ int main() {
     glBindVertexArray(VAO);
       // calculate the model matrix for each object and pass it to shader before
       // drawing
-      glm::mat4 model = glm::mat4(
-          1.0f); // make sure to initialize matrix to identity matrix first
-           ourShader.setMat4("model", model);
-      glUniform3f(uniform,0.5,0.7,1.0);
-      glDrawArrays(GL_TRIANGLE_STRIP, 0, vertices.size()/3);
+      glm::mat4 model = glm::mat4(1.0f); // make sure to initialize matrix to identity matrix first
+      ourShader.setMat4("model", model);
+
+      for(int i=0;i<33;i++){
+
+          glUniform3f(uniform,1,1,0);
+          glDrawArrays(GL_TRIANGLE_STRIP, i*54,24 );
+          glUniform3f(uniform,1,0,0);
+          glDrawArrays(GL_TRIANGLE_STRIP, i*54+22,8);
+          glUniform3f(uniform,1,1,0);
+          glDrawArrays(GL_TRIANGLE_STRIP, i*54+28,26 );
+      }
 
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
