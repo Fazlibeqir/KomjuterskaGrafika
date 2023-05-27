@@ -117,13 +117,14 @@ int main() {
   glBindVertexArray(VAO);
 
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), &vertices[0], GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, vertices.size()*sizeof(float), &vertices[0], GL_STATIC_DRAW);
 
   // position attribute
-  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), nullptr);
+  glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
   glEnableVertexAttribArray(0);
 
   int uniform= glGetUniformLocation(ourShader.ID, "ChangeColor");
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
   // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
@@ -165,7 +166,7 @@ int main() {
           1.0f); // make sure to initialize matrix to identity matrix first
            ourShader.setMat4("model", model);
       glUniform3f(uniform,0.5,0.7,1.0);
-      glDrawArrays(GL_TRIANGLES, 0, 36);
+      glDrawArrays(GL_TRIANGLES, 0, vertices.size()/3);
 
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
