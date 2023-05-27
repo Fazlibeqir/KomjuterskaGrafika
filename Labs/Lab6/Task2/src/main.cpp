@@ -90,6 +90,79 @@ int main() {
     float radius= 0.5f;
     float radius2= 1.0f;
 
+    for(int i=0;i<=numPoints;i++){
+        float x= radius * glm::sin(glm::two_pi<float>()*angle/360);
+        float y= radius * glm::cos(glm::two_pi<float>()*angle/360);
+
+        vertices.push_back(x);
+        vertices.push_back(y);
+        vertices.push_back(0);
+
+        vertices2.push_back(x);
+        vertices2.push_back(y);
+        vertices2.push_back(-0.2f);
+
+        vertices3.push_back(x);
+        vertices3.push_back(y);
+        vertices3.push_back(0);
+
+        vertices3.push_back(x);
+        vertices3.push_back(y);
+        vertices3.push_back(-0.2f);
+
+        x=radius2 *glm::sin(glm::two_pi<float>()*angle/360);
+        y=radius2 *glm::cos(glm::two_pi<float>()*angle/360);
+
+        vertices.push_back(x);
+        vertices.push_back(y);
+        vertices.push_back(0);
+
+        vertices2.push_back(x);
+        vertices2.push_back(y);
+        vertices2.push_back(-0.2f);
+
+        vertices4.push_back(x);
+        vertices4.push_back(y);
+        vertices4.push_back(0);
+
+        vertices4.push_back(x);
+        vertices4.push_back(y);
+        vertices4.push_back(-0.2f);
+
+
+        angle += 360.0f / numPoints;
+    }
+    vertices.insert(vertices.end(), vertices2.begin(), vertices2.end());
+    vertices.insert(vertices.end(), vertices3.begin(), vertices3.end());
+    vertices.insert(vertices.end(), vertices4.begin(), vertices4.end());
+
+    std::vector<float> vertices5 ={
+            0.0f, -0.5f, -0.2f, 0.5f,  -0.5f, -0.2f,
+            0.5f,  0.5f,  -0.2f, 0.5f,  0.5f,  -0.2f,
+            0.0f, 0.5f,  -0.2f, -0.0f, -0.5f, -0.2f,
+
+            -0.0f, -0.5f, 0.0f,  0.5f,  -0.5f, 0.0f,
+            0.5f,  0.5f,  0.0f,  0.5f,  0.5f,  0.0f,
+            -0.0f, 0.5f,  0.0f,  -0.0f, -0.5f, 0.0f,
+
+            -0.0f, 0.5f,  0.0f,  -0.0f, 0.5f,  -0.2f,
+            -0.0f, -0.5f, -0.2f, -0.0f, -0.5f, -0.2f,
+            -0.0f, -0.5f, 0.0f,  -0.0f, 0.5f,  0.0f,
+
+            0.5f,  0.5f,  0.0f,  0.5f,  0.5f,  -0.2f,
+            0.5f,  -0.5f, -0.2f, 0.5f,  -0.5f, -0.2f,
+            0.5f,  -0.5f, 0.0f,  0.5f,  0.5f,  0.0f,
+
+            -0.0f, -0.5f, -0.2f, 0.5f,  -0.5f, -0.2f,
+            0.5f,  -0.5f, 0.0f,  0.5f,  -0.5f, 0.0f,
+            -0.0f, -0.5f, 0.0f,  -0.0f, -0.5f, -0.2f,
+
+            -0.0f, 0.5f,  -0.2f, 0.5f,  0.5f,  -0.2f,
+            0.5f,  0.5f,  0.0f,  0.5f,  0.5f,  0.0f,
+            -0.0f, 0.5f,  0.0f,  -0.0f, 0.5f,  -0.2f
+    };
+    vertices.insert(vertices.end(), vertices5.begin(), vertices5.end());
+
     GLuint VBO, VAO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
