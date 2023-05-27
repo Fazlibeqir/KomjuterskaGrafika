@@ -83,6 +83,43 @@ int main() {
 
   // set up vertex data (and buffer(s)) and configure vertex attributes
   // ------------------------------------------------------------------
+  std::vector<float> vertices;
+    double r=1;
+    int lats=32;
+    int longs=32;
+    for(int i=0;i<=lats;i++){
+        double lat0=glm::pi<float>()*(-0.5+(double)(i-1)/lats);
+        double z0 = sin(lat0);
+        double z00= cos(lat0);
+
+        double lat1=glm::pi<float>()*(-0.5+(double)i/lats);
+        double z1= sin(lat1);
+        double z11= cos(lat1);
+        for(int j=0;j<=longs;j++){
+            if(j==12 || j==20){
+                vertices.push_back(0);
+                vertices.push_back(0);
+                vertices.push_back(0);
+
+                vertices.push_back(0);
+                vertices.push_back(0);
+                vertices.push_back(0);
+            }
+            if(j>=12 && j<20){
+                continue;
+            }
+            double lon=glm::two_pi<float>()*(double)(j-1)/longs;
+            double x= cos(lon);
+            double y= sin(lon);
+            vertices.push_back(r*x*z00);
+            vertices.push_back(r*y*z00);
+            vertices.push_back(r*z0);
+
+            vertices.push_back(r*x*z11);
+            vertices.push_back(r*y*z11);
+            vertices.push_back(r*z1);
+        }
+    }
 
   unsigned int VBO, VAO;
   glGenVertexArrays(1, &VAO);
@@ -139,6 +176,8 @@ int main() {
       glm::mat4 model = glm::mat4(
           1.0f); // make sure to initialize matrix to identity matrix first
            ourShader.setMat4("model", model);
+      glUniform3f(uniform,0.5,0.7,1.0);
+      glDrawArrays(GL_TRIANGLE_STRIP, 0, vertices.size()/3);
 
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved

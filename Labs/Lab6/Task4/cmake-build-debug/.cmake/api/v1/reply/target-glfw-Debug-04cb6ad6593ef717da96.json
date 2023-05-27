@@ -105,15 +105,15 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glfw/src"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glfw/src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/cmake-build-debug/vendor/glfw/src"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/cmake-build-debug/vendor/glfw/src"
 				}
 			],
 			"language" : "C",
@@ -153,7 +153,7 @@
 		],
 		"prefix" : 
 		{
-			"path" : "C:/Program Files (x86)/OpenGLPrj"
+			"path" : "C:/Program Files (x86)/Task4"
 		}
 	},
 	"name" : "glfw",

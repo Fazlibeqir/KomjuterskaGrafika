@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Task3/bin/Task3.exe"
+			"path" : "Task4/bin/Task4.exe"
 		},
 		{
-			"path" : "Task3/bin/Task3.pdb"
+			"path" : "Task4/bin/Task4.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -70,30 +70,30 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3\""
+					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glad/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glm"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/stb"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/stb"
 				}
 			],
 			"language" : "CXX",
@@ -119,30 +119,30 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3\""
+					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glad/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/glm"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task3/vendor/stb"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task4/vendor/stb"
 				}
 			],
 			"language" : "C",
@@ -159,7 +159,7 @@
 			"id" : "glfw::@31bd9730e6b8c71cc656"
 		}
 	],
-	"id" : "Task3::@6890427a1f51a3e7e1df",
+	"id" : "Task4::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -184,8 +184,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "Task3",
-	"nameOnDisk" : "Task3.exe",
+	"name" : "Task4",
+	"nameOnDisk" : "Task4.exe",
 	"paths" : 
 	{
 		"build" : ".",
