@@ -105,15 +105,15 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glfw/src"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glfw/src"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/cmake-build-debug/vendor/glfw/src"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/cmake-build-debug/vendor/glfw/src"
 				}
 			],
 			"language" : "C",

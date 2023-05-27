@@ -72,7 +72,7 @@
 					[
 						0
 					],
-					"name" : "OpenGLPrj",
+					"name" : "Task1",
 					"targetIndexes" : 
 					[
 						0
@@ -97,15 +97,15 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "OpenGLPrj::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OpenGLPrj-Debug-7105fce5cc632171e67f.json",
-					"name" : "OpenGLPrj",
+					"id" : "Task1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Task1-Debug-2fed2e34dd6ee4dc3b88.json",
+					"name" : "Task1",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "glfw::@31bd9730e6b8c71cc656",
-					"jsonFile" : "target-glfw-Debug-f07e276dde53095f0a47.json",
+					"jsonFile" : "target-glfw-Debug-1720730e3e17a30da809.json",
 					"name" : "glfw",
 					"projectIndex" : 1
 				},
@@ -122,8 +122,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/cmake-build-debug",
-		"source" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj"
+		"build" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/cmake-build-debug",
+		"source" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1"
 	},
 	"version" : 
 	{

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "OpenGLPrj/bin/OpenGLPrj.exe"
+			"path" : "Task1/bin/Task1.exe"
 		},
 		{
-			"path" : "OpenGLPrj/bin/OpenGLPrj.pdb"
+			"path" : "Task1/bin/Task1.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -70,30 +70,30 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj\""
+					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glad/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glm"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/stb"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/stb"
 				}
 			],
 			"language" : "CXX",
@@ -118,36 +118,36 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj\""
+					"define" : "PROJECT_SOURCE_DIR=\"F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1\""
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glad/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glad/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glfw/include"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glfw/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/glm"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/glm"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Semestri6/semester 4/Kompjuterska Grafika semestri 4/Labs/lab06_191045/OpenGLPrj/vendor/stb"
+					"path" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab6/Task1/vendor/stb"
 				}
 			],
 			"language" : "C",
 			"sourceIndexes" : 
 			[
-				13
+				9
 			]
 		}
 	],
@@ -158,7 +158,7 @@
 			"id" : "glfw::@31bd9730e6b8c71cc656"
 		}
 	],
-	"id" : "OpenGLPrj::@6890427a1f51a3e7e1df",
+	"id" : "Task1::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -183,8 +183,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "OpenGLPrj",
-	"nameOnDisk" : "OpenGLPrj.exe",
+	"name" : "Task1",
+	"nameOnDisk" : "Task1.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -228,18 +228,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				8,
-				9,
-				10,
-				11,
-				12
+				8
 			]
 		},
 		{
 			"name" : "vendors",
 			"sourceIndexes" : 
 			[
-				13
+				9
 			]
 		}
 	],
@@ -289,27 +285,7 @@
 		},
 		{
 			"backtrace" : 1,
-			"path" : ".gitattributes",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".gitignore",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 1,
-			"path" : ".gitmodules",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 1,
 			"path" : "CMakeLists.txt",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 1,
-			"path" : "ReadMe.md",
 			"sourceGroupIndex" : 4
 		},
 		{
