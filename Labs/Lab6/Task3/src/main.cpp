@@ -83,6 +83,32 @@ int main() {
 
   // set up vertex data (and buffer(s)) and configure vertex attributes
   // ------------------------------------------------------------------
+  std::vector<float> vertices;
+    double r=1;
+    int lats=32;
+    int longs=32;
+    for(int i=0;i<=lats;i++){
+        double lat0=glm::pi<float>()*(-0.5+(double)(i-1)/lats);
+        double z0 = sin(lat0);
+        double z00= cos(lat0);
+
+        double lat1=glm::pi<float>()*(-0.5+(double)i/lats);
+        double z1= sin(lat1);
+        double z11= cos(lat1);
+        for(int j=0;j<=longs;j++){
+            double lon=glm::two_pi<float>()*(double)(j-1)/longs;
+            double x= cos(lon);
+            double y= sin(lon);
+            vertices.push_back(r*x*z00);
+            vertices.push_back(r*y*z00);
+            vertices.push_back(r*z0);
+
+            glVertex3f(r*x*z11,r*y*z11,r*z1);
+            vertices.push_back(r*x*z11);
+            vertices.push_back(r*y*z11);
+            vertices.push_back(r*z1);
+        }
+    }
 
   unsigned int VBO, VAO;
   glGenVertexArrays(1, &VAO);
@@ -91,15 +117,11 @@ int main() {
   glBindVertexArray(VAO);
 
   glBindBuffer(GL_ARRAY_BUFFER, VBO);
-  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+  glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), &vertices[0], GL_STATIC_DRAW);
 
   // position attribute
   glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), nullptr);
   glEnableVertexAttribArray(0);
-  // texture coord attribute
-  glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float),
-                        reinterpret_cast<void *>(3 * sizeof(float)));
-  glEnableVertexAttribArray(1);
 
   int uniform= glGetUniformLocation(ourShader.ID, "ChangeColor");
   // render loop
@@ -144,7 +166,7 @@ int main() {
            ourShader.setMat4("model", model);
       glUniform3f(uniform,0.5,0.7,1.0);
       glDrawArrays(GL_TRIANGLES, 0, 36);
-    
+
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
