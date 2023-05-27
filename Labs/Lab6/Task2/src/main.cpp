@@ -210,7 +210,18 @@ int main() {
     glBindVertexArray(VAO);
     glm::mat4 model =glm::mat4(1.0f);
     ourShader.setMat4("model", model);
+    //Draw The "O"
+    glUniform3f(uniform, 0.50, 0.70, 1.00);
+    glDrawArrays(GL_TRIANGLE_STRIP, 0, 66);
+    glDrawArrays(GL_TRIANGLE_STRIP, 66, 66);
+   glDrawArrays(GL_TRIANGLE_STRIP, 66*2, 66);
+    glDrawArrays(GL_TRIANGLE_STRIP, 66*3, 66);
 
+    //Draw the "I"
+    glUniform3f(uniform, 0.25, 0.35, 0.50);
+    model= glm::translate(model, glm::vec3(-1,0,0));
+    ourShader.setMat4("model",model);
+    glDrawArrays(GL_TRIANGLES, 66*4, 36);
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
     // -------------------------------------------------------------------------------
