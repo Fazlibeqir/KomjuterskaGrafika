@@ -166,7 +166,7 @@ int main() {
           1.0f); // make sure to initialize matrix to identity matrix first
            ourShader.setMat4("model", model);
       glUniform3f(uniform,0.5,0.7,1.0);
-      glDrawArrays(GL_TRIANGLES, 0, vertices.size()/3);
+      glDrawArrays(GL_TRIANGLE_STRIP, 0, vertices.size()/3);
 
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
