@@ -89,9 +89,19 @@ int main() {
     int numPoints=50;
     float radius= 0.5f;
     float radius2= 1.0f;
-    
 
-  // render loop
+    GLuint VBO, VAO;
+    glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &VBO);
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, vertices.size() * sizeof(vertices), &vertices[0], GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), nullptr);
+    glEnableVertexAttribArray(0);
+
+    int uniform= glGetUniformLocation(ourShader.ID, "ChangeColor");
+    // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
     // per-frame time logic
@@ -125,7 +135,8 @@ int main() {
 
     // render boxes
     glBindVertexArray(VAO);
-
+    glm::mat4 model =glm::mat4(1.0f);
+    ourShader.setMat4("model", model);
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
