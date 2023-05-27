@@ -1,10 +1,8 @@
-#include <OpenGLPrj.hpp>
 #include <GLFW/glfw3.h>
 #include <Camera.hpp>
 #include <Shader.hpp>
 #include <iostream>
 #include <string>
-#include <vector>
 
 const std::string program_name = ("Camera");
 
@@ -143,7 +141,6 @@ int main() {
     // ------
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
 
     // activate shader
     ourShader.use();
