@@ -86,9 +86,9 @@ int main() {
     std::vector<float> vertices4;
 
     float angle=0;
-    int numPoints=50;
-    float radius= 0.5f;
-    float radius2= 1.0f;
+    int numPoints=32;
+    float radius= 0.3f;
+    float radius2= 0.4f;
 
     for(int i=0;i<=numPoints;i++){
         float x= radius * glm::sin(glm::two_pi<float>()*angle/360);
