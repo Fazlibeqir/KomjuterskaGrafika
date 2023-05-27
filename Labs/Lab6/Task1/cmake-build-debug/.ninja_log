@@ -20,3 +20,5 @@
 3765	4798	7069191990776556	vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	8963b28439b827c3
 4799	4927	7069191992058179	vendor/glfw/src/libglfw3.a	2d088e360d9be5a8
 4927	5514	7069191997453964	Task1/bin/Task1.exe	b2ff20bac2d721d9
+4	1882	7069194136197559	CMakeFiles/Task1.dir/src/main.cpp.obj	21d91e06e02d9ab0
+1884	2249	7069194139435052	Task1/bin/Task1.exe	b2ff20bac2d721d9
