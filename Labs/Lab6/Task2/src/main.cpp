@@ -80,6 +80,16 @@ int main() {
 
   // set up vertex data (and buffer(s)) and configure vertex attributes
   // ------------------------------------------------------------------
+    std::vector<float> vertices;
+    std::vector<float> vertices2;
+    std::vector<float> vertices3;
+    std::vector<float> vertices4;
+
+    float angle=0;
+    int numPoints=50;
+    float radius= 0.5f;
+    float radius2= 1.0f;
+    
 
   // render loop
   // -----------
@@ -115,7 +125,7 @@ int main() {
 
     // render boxes
     glBindVertexArray(VAO);
-   
+
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
