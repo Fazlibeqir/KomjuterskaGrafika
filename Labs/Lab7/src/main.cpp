@@ -252,7 +252,18 @@ int main() {
 
       glDrawArrays(GL_TRIANGLES, 0, 36);
     }
-    
+    if(camera.Position.y>1){
+        camera.Position.y-=deltaTime*5;
+    }
+    if(jumpVel>0){
+        camera.Position.y+=jumpVel*deltaTime;
+    }else{
+        isJumping=false;
+        jumpVel=0;
+    }
+    if(isCrouching && !isJumping){
+        camera.Position.y=-0.5f;
+    }
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
