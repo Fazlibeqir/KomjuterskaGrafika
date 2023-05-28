@@ -298,6 +298,18 @@ void processInput(GLFWwindow *window) {
     camera.ProcessKeyboard(LEFT, deltaTime);
   if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
     camera.ProcessKeyboard(RIGHT, deltaTime);
+  if(glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)==GLFW_PRESS)
+      isCrouching=true;
+  if(glfwGetKey(window, GLFW_KEY_LEFT_CONTROL)==GLFW_RELEASE && isCrouching)
+  {
+      isCrouching= false;
+      camera.Position.y=1;
+  }
+  if(glfwGetKey(window, GLFW_KEY_SPACE)==GLFW_PRESS && isJumping==false)
+  {
+      jumpVel=10;
+      isJumping= true;
+  }
 }
 
 // glfw: whenever the window size changed (by OS or user resize) this callback

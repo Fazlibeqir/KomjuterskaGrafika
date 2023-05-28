@@ -31,6 +31,7 @@ glm::mat4 Camera::GetViewMatrix() {
 // systems)
 void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime) {
   float velocity = MovementSpeed * deltaTime;
+  float y=Position.y;
   if (direction == FORWARD)
     Position += Front * velocity;
   if (direction == BACKWARD)
@@ -39,6 +40,8 @@ void Camera::ProcessKeyboard(Camera_Movement direction, float deltaTime) {
     Position -= Right * velocity;
   if (direction == RIGHT)
     Position += Right * velocity;
+
+  Position.y=y;
 }
 
 // Processes input received from a mouse input system. Expects the offset
