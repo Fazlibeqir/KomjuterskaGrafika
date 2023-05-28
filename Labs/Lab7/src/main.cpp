@@ -27,9 +27,14 @@ static bool firstMouse = true;
 static float deltaTime = 0.0f; // time between current frame and last frame
 static float lastFrame = 0.0f;
 
+float JumpAcceleration=20.0f;
+float CrouchPosition=-0.5f;
+float CrouchTime=0.2f;
 float jumpVel=0;
 bool isJumping= false;
 bool isCrouching=false;
+float crouchTimer=0.0f;
+float groundLevel=0.0f;
 
 int main() {
   // glfw: initialize and configure
@@ -198,8 +203,8 @@ int main() {
   ourShader.setInt("texture1", 0);
   ourShader.setInt("texture2", 1);
 
-  camera.Position.y=8;
-  camera.MovementSpeed=8;
+//  camera.Position.y=8;
+//  camera.MovementSpeed=8;
   // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
@@ -252,18 +257,28 @@ int main() {
 
       glDrawArrays(GL_TRIANGLES, 0, 36);
     }
-    if(camera.Position.y>1){
-        camera.Position.y-=deltaTime*5;
-    }
-    if(jumpVel>0){
+    if(isJumping){
         camera.Position.y+=jumpVel*deltaTime;
+        jumpVel-=JumpAcceleration*deltaTime;
+        if(jumpVel<=0.0f){
+            camera.Position.y=groundLevel;
+            isJumping= false;
+            jumpVel=0.0f;
+        }
     }else{
-        isJumping=false;
-        jumpVel=0;
+        if(isCrouching){
+            if(crouchTimer<CrouchTime){
+                float t=crouchTimer/CrouchTime;
+                camera.Position.y=glm::mix(camera.Position.y,CrouchPosition,t);
+                crouchTimer+=deltaTime;
+            }else{
+                camera.Position.y=CrouchPosition;
+            }
+        }else{
+            crouchTimer=0.0f;
+        }
     }
-    if(isCrouching && !isJumping){
-        camera.Position.y=-0.5f;
-    }
+
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)
