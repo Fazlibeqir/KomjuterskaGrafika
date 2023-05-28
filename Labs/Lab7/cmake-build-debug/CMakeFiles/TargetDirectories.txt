@@ -1,4 +1,4 @@
-F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug/CMakeFiles/OpenGLPrj.dir
+F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug/CMakeFiles/Lab7.dir
 F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug/CMakeFiles/edit_cache.dir
 F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug/CMakeFiles/list_install_components.dir

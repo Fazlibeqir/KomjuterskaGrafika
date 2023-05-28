@@ -899,7 +899,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "OpenGLPrj"
+			"value" : "Lab7"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1420,6 +1420,42 @@
 			],
 			"type" : "STRING",
 			"value" : ""
+		},
+		{
+			"name" : "Lab7_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug"
+		},
+		{
+			"name" : "Lab7_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Lab7_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7"
 		},
 		{
 			"name" : "OpenGLPrj_BINARY_DIR",

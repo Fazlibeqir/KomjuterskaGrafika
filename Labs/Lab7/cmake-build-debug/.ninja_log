@@ -1,0 +1,24 @@
+# ninja log v5
+25	1164	7069827268981330	vendor/glfw/src/CMakeFiles/glfw.dir/init.c.obj	5dd28aaf12ad9b10
+33	1251	7069827269851986	vendor/glfw/src/CMakeFiles/glfw.dir/input.c.obj	3c9fa08a36c508a6
+0	1790	7069827275232231	CMakeFiles/Lab7.dir/src/Camera.cpp.obj	363e3a6096b2927a
+6	2086	7069827278115064	CMakeFiles/Lab7.dir/src/Shader.cpp.obj	b54e64f1f65f296b
+18	2127	7069827278545473	CMakeFiles/Lab7.dir/vendor/glad/src/glad.c.obj	a49781011c3f9de8
+1166	2385	7069827281088199	vendor/glfw/src/CMakeFiles/glfw.dir/context.c.obj	580225224f7d125c
+1251	2449	7069827281828961	vendor/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj	71c357b762ae9109
+1793	3023	7069827287568871	vendor/glfw/src/CMakeFiles/glfw.dir/window.c.obj	26da2729aadb7e9b
+2087	3176	7069827289105304	vendor/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj	274d663378106159
+2127	3271	7069827290056018	vendor/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj	17bead941dcdf5ca
+12	3391	7069827291227145	CMakeFiles/Lab7.dir/src/main.cpp.obj	5e2344f26458a84c
+2385	3547	7069827292653857	vendor/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj	c272a57a2de70844
+2450	3620	7069827293439965	vendor/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj	f104ec667c67ca7c
+3024	4142	7069827298765619	vendor/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj	ce3835706bea0b4
+3177	4284	7069827300186719	vendor/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj	1fdf4eade65067f3
+3395	4494	7069827302291275	vendor/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj	d6f63aa711759ae9
+3271	4518	7069827302531573	vendor/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj	256454c3ce253fa2
+3548	4586	7069827303222111	vendor/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj	ae4e1533d09de797
+3621	4610	7069827303452092	vendor/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj	45f6c38d0ba09cab
+4610	4737	7069827304734738	vendor/glfw/src/libglfw3.a	2d088e360d9be5a8
+4738	5304	7069827309955162	Lab7/bin/Lab7.exe	892fef2d07c228e0
+7	1873	7069829551372563	CMakeFiles/Lab7.dir/src/main.cpp.obj	5e2344f26458a84c
+1877	2413	7069829556364249	Lab7/bin/Lab7.exe	892fef2d07c228e0

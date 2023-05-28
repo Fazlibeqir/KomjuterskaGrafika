@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "OpenGLPrj/bin/OpenGLPrj.exe"
+			"path" : "Lab7/bin/Lab7.exe"
 		},
 		{
-			"path" : "OpenGLPrj/bin/OpenGLPrj.pdb"
+			"path" : "Lab7/bin/Lab7.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -159,7 +159,7 @@
 			"id" : "glfw::@31bd9730e6b8c71cc656"
 		}
 	],
-	"id" : "OpenGLPrj::@6890427a1f51a3e7e1df",
+	"id" : "Lab7::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -184,8 +184,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "OpenGLPrj",
-	"nameOnDisk" : "OpenGLPrj.exe",
+	"name" : "Lab7",
+	"nameOnDisk" : "Lab7.exe",
 	"paths" : 
 	{
 		"build" : ".",

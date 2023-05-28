@@ -1,10 +1,7 @@
 #include <OpenGLPrj.hpp>
-
 #include <GLFW/glfw3.h>
-
 #include <Camera.hpp>
 #include <Shader.hpp>
-
 #include <iostream>
 #include <string>
 #include <vector>
@@ -29,6 +26,10 @@ static bool firstMouse = true;
 // timing
 static float deltaTime = 0.0f; // time between current frame and last frame
 static float lastFrame = 0.0f;
+
+float jumpVel=0;
+bool isJumping= false;
+bool isCrouching=false;
 
 int main() {
   // glfw: initialize and configure
@@ -197,6 +198,8 @@ int main() {
   ourShader.setInt("texture1", 0);
   ourShader.setInt("texture2", 1);
 
+  camera.Position.y=8;
+  camera.MovementSpeed=8;
   // render loop
   // -----------
   while (!glfwWindowShouldClose(window)) {
@@ -249,6 +252,7 @@ int main() {
 
       glDrawArrays(GL_TRIANGLES, 0, 36);
     }
+    
 
     // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved
     // etc.)

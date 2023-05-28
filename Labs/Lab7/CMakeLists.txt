@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(OpenGLPrj)
+project(Lab7)
 
 option(GLFW_BUILD_DOCS OFF)
 option(GLFW_BUILD_EXAMPLES OFF)

@@ -160,7 +160,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=OpenGLPrj
+CMAKE_PROJECT_NAME:STATIC=Lab7
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/INFINTY/mingw64/bin/ranlib.exe
@@ -272,6 +272,15 @@ GLFW_VULKAN_STATIC:BOOL=OFF
 //Takes an empty string or 64. Directory where lib will be installed:
 // lib or lib64
 LIB_SUFFIX:STRING=
+
+//Value Computed by CMake
+Lab7_BINARY_DIR:STATIC=F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug
+
+//Value Computed by CMake
+Lab7_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Lab7_SOURCE_DIR:STATIC=F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7
 
 //Value Computed by CMake
 OpenGLPrj_BINARY_DIR:STATIC=F:/IMPORTANTTTTTTTTTTTTTTTTTTTT/FINKI/Reopsitory/KomjuterskaGrafika/Labs/Lab7/cmake-build-debug
