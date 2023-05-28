@@ -30,11 +30,20 @@ static float lastFrame = 0.0f;
 float JumpAcceleration=20.0f;
 float CrouchPosition=-0.5f;
 float CrouchTime=0.2f;
-float jumpVel=0;
+float ReturnTime=0.2f;
+
+float jumpVel=0.0f;
 bool isJumping= false;
 bool isCrouching=false;
 float crouchTimer=0.0f;
+float returnTimer=0.0f;
 float groundLevel=0.0f;
+float initialY=0.0f; //position before all
+
+float easeOutCubic(float t){{
+    t-=1.0f;
+        return t*t*t+1.0f;
+}}
 
 int main() {
   // glfw: initialize and configure
@@ -260,22 +269,37 @@ int main() {
     if(isJumping){
         camera.Position.y+=jumpVel*deltaTime;
         jumpVel-=JumpAcceleration*deltaTime;
-        if(jumpVel<=0.0f){
+
+        if(camera.Position.y<=groundLevel){
             camera.Position.y=groundLevel;
             isJumping= false;
             jumpVel=0.0f;
+            initialY=groundLevel;
+            returnTimer=0.0f;
         }
     }else{
         if(isCrouching){
             if(crouchTimer<CrouchTime){
                 float t=crouchTimer/CrouchTime;
-                camera.Position.y=glm::mix(camera.Position.y,CrouchPosition,t);
+                float smoothing= easeOutCubic(t);
+                camera.Position.y=glm::mix(camera.Position.y,CrouchPosition,smoothing);
                 crouchTimer+=deltaTime;
+                initialY=camera.Position.y;
+                returnTimer=0.0f;
             }else{
                 camera.Position.y=CrouchPosition;
             }
         }else{
             crouchTimer=0.0f;
+
+            if(returnTimer<ReturnTime){
+                float t=returnTimer/ReturnTime;
+                float smoothing= easeOutCubic(t);
+                camera.Position.y=glm::mix(camera.Position.y,initialY, smoothing);
+                returnTimer+=deltaTime;
+            }else{
+                camera.Position.y=initialY;
+            }
         }
     }
 
@@ -320,7 +344,7 @@ void processInput(GLFWwindow *window) {
       isCrouching= false;
       camera.Position.y=1;
   }
-  if(glfwGetKey(window, GLFW_KEY_SPACE)==GLFW_PRESS && isJumping==false)
+  if(glfwGetKey(window, GLFW_KEY_SPACE)==GLFW_PRESS && !isJumping)
   {
       jumpVel=10;
       isJumping= true;
