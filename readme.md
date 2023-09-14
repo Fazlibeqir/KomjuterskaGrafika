@@ -1,5 +1,7 @@
-# git clone --recursive https://github.com/joksim/OpenGLPrj.git
-
+Labs are made using
+```bash
+git clone --recursive https://github.com/joksim/OpenGLPrj.git
+```
 [Watch the Video](https://github.com/Fazlibeqir/KomjuterskaGrafika/blob/main/Demo.mp4)
 
 Your browser may not support the video tag, or you can [watch the video here](https://github.com/Fazlibeqir/KomjuterskaGrafika/blob/main/Demo.mp4).
